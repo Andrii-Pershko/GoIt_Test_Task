@@ -18,19 +18,6 @@ export const Container = styled.div`
   padding-left: 96px;
   padding-right: 96px;
   margin: 0 auto;
-
-  /* @media screen and (min-width: 375px) {
-    width: 375px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 12px;
-    padding-right: 12px;
-  } */
-
-  /* @media screen and (min-width: 1140px) {
-  } */
 `;
 
 export const StyledLink = styled(NavLink)`
