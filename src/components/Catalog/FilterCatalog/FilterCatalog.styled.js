@@ -15,7 +15,6 @@ export const StyledLabel = styled.label`
 
 export const StyledField = styled(Field)`
   position: relative;
-  /* z-index: -1; */
   border-radius: 14px;
   background: #f7f7fb;
   padding: 14px 18px;

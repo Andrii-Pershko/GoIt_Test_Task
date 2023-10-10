@@ -5,8 +5,6 @@ import { CarList } from "./FavoriteCarList.styled";
 const FavoriteCarList = () => {
   const favoriteList = useSelector((store) => store.favorite.favoriteCars);
 
-  console.log("Example", favoriteList);
-
   return (
     <CarList>
       {favoriteList.map((car, index) => (
