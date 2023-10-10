@@ -4,6 +4,7 @@ import { getCars, getMoreCars } from "../../../redux/Cars/operation";
 import { selectGetCars, selectIsLoading } from "../../../redux/Cars/selectors";
 import CarCard from "../CarCard";
 import { CarList, LoadMoreBtn } from "./CarsList.styled";
+import { onTop } from "../../../utils/onTop";
 
 const CarsList = () => {
   const [page, setPage] = useState(1);
@@ -21,13 +22,6 @@ const CarsList = () => {
   const handleLoadMoreCare = () => {
     dispatch(getMoreCars(page + 1));
     setPage(page + 1);
-  };
-
-  const onTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
 
   if (isLoading) {
